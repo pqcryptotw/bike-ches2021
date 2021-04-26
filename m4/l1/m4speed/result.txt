@@ -1,0 +1,107 @@
+keypair cycles:
+94740187
+encaps cycles: 
+5732572
+decaps cycles: 
+133549556
+ERROR KEYS
+
+
+
+gf2x_mod_mul x 1 : R_PADDED_BYTES (2048bytes?)
+speed1() cycles:
+4349255
+
+mul with rotate
+speed2() cycles: 
+4862460
+
+mul with rotate:
+prepare: 10752
+per rotate: 37357
+
+                                                                                                     
+bitpolymult x 1 : len: 2048 byte -> 4096 byte
+speed1() cycles:
+4457067
+
+vec32 asm
+bitpolymult x 1 : len: 2048 byte -> 4096 byte
+speed1() cycles:
+3360686
+~ 141 x rotate + 1 x rotate prepare
+
+
+
+keypair cycles:
+95113210
+encaps cycles: 
+6422889     --> 5449666(FFT)
+decaps cycles: 
+134925942
+OK KEYS
+
+===
+use input transform
+
+keypair cycles:
+64017240
+encaps cycles: 
+5340044
+decaps cycles: 
+114146222
+
+===
+balanced adder in decode.c
+
+keypair cycles:
+64014936
+encaps cycles: 
+5341395
+decaps cycles: 
+98700617
+
+
+===
+rotate with transposed data
+
+keypair cycles:
+64014853
+encaps cycles: 
+5337582
+decaps cycles: 
+97586222
+
+===
+
+itoh-tsujii with input transform of a
+keypair cycles:
+58941526
+encaps cycles: 
+5342790
+decaps cycles: 
+97590601
+
+===
+
+assembly code for 32x32 transpose (***UNSAFE: non-constant-time***)
+keypair cycles:
+58950537
+encaps cycles: 
+5337832
+decaps cycles: 
+80106438
+(C code for 32x32 transpose)
+84423831
+
+
+===
++ input transform of pk. do not use transposed rotatation
+
+keypair cycles:
+58946729
+encaps cycles: 
+5335675
+decaps cycles: 
+93440560
+

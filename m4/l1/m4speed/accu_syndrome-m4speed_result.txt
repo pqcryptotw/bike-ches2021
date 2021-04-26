@@ -1,0 +1,29 @@
+portable:
+
+BIKE l1:
+
+accu symdrome x 1
+speed1() cycles:
+4394274
+
+BIKE l3:
+
+accu symdrome x 1
+speed1() cycles:
+13836539
+
+
+====
+
+BIKE l1:
+
+accu symdrome x 1
+speed1() cycles:
+2506890
+
+BIKE l3:
+
+accu symdrome x 1
+speed1() cycles:
+7404507
+
