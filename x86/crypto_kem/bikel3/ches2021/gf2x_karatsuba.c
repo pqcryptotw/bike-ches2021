@@ -183,7 +183,7 @@ void gf2x_mul_4096(OUT uint64_t *c, IN const uint64_t *a, IN const uint64_t *b)
 
   karatzuba((uint64_t *)c, (const uint64_t *)a, (const uint64_t *)b, 64, 64, secure_buffer);
 
-  secure_clean((uint8_t*)secure_buffer, sizeof(secure_buffer));
+  //secure_clean((uint8_t*)secure_buffer, sizeof(secure_buffer));
 }
 
 
@@ -195,6 +195,6 @@ void gf2x_mul_8192(OUT uint64_t *c, IN const uint64_t *a, IN const uint64_t *b)
 
   karatzuba((uint64_t *)c, (const uint64_t *)a, (const uint64_t *)b, 128, 128, secure_buffer);
 
-  secure_clean((uint8_t*)secure_buffer, sizeof(secure_buffer));
+  //secure_clean((uint8_t*)secure_buffer, sizeof(secure_buffer));
 }
 

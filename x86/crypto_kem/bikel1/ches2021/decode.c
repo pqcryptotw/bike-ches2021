@@ -291,6 +291,10 @@ _INLINE_ void bit_slice_full_subtract(OUT upc_t *upc, IN uint8_t val)
   }
 }
 
+#if defined(CRYPTO_NAMESPACE)
+#define transpose_64x256_sp_asm  CRYPTO_NAMESPACE(transpose_64x256_sp_asm)
+#endif
+
 extern void transpose_64x256_sp_asm(__m256i *);
 
 
