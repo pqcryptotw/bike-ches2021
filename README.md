@@ -37,7 +37,7 @@ There are 2 directories:
 #### Instructions for benchmarking on SUPERCOP
 1. Download and setup the SUPERCOP (https://bench.cr.yp.to/supercop.html).
 2. Copy the crypto_kem/ to SUPERCOP:  
-  'cp -r crypto_kem/  **supercop**/crypto_kem/bikel1'  
+  'cp -r crypto_kem  **SUPERCOP_DIR**/crypto_kem'  
 3. Benchmarking on SUPERCOP  
   'do-part used'  
   'do-part crypto_kem bikel1'  
