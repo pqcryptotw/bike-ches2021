@@ -23,8 +23,10 @@ There are 4 directories:
 
 - **l1** : BIKE level 1, this work, modified from BIKE team's portable version.
 - **l3** : BIKE level 3, this work, modified from BIKE team's portable version.
-- **portablel1** : BIKE team's portable implementation for level 1, modified and compatible with PQM4.
-- **portablel3** : BIKE team's portable implementation for level 3, modified and compatible with PQM4.
+- **portablel1** : BIKE team's portable implementation for level 1, modified and compatible with PQM4. The directory is **NOT** part of 
+  our implementation but for bencharmking only. Please do not include the directory in the final version.  
+- **portablel3** : BIKE team's portable implementation for level 3, modified and compatible with PQM4. The directory is **NOT** part of 
+  our implementation but for bencharmking only. Please do not include the directory in the final version.  
 
 
 ## Instructions for benchmarking on PQM4
