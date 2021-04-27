@@ -61,12 +61,12 @@ There are 4 directories:
 
 #### Instructions for benchmarking on PQM4
 1. Download and setup benchmarking environment for PQM4 from https://github.com/mupq/pqm4 .
-2. Copy the *imple*/src directory to  *pqm4*/crypto_kem/*your_desired_name*/ . For example,
+2. Copy the *imple*/src directory to  *pqm4*/crypto_kem/*your_desired_name*/ . For example,  
   'cp -r l1/src  pqm4/crypto_kem/bikel1'  (assuming the PQM4 is installed in the *pqm4* directory.)
-3. Use standard tester on PQM4 for the implementation you copied. For example, in the *pqm4* directory, execute
-  'python3 test.py'
-  or
-  'make IMPLEMENTATION_PATH=crypto_kem/bikel1 bin/crypto_kem_bikel1_speed.bin; st-flash write bin/crypto_kem_bikel1_speed.bin 0x8000000' .
+3. Use standard tester on PQM4 for the implementation you copied. For example, in the *pqm4* directory, execute  
+  'python3 test.py'  
+  or  
+  'make IMPLEMENTATION_PATH=crypto_kem/bikel1 bin/crypto_kem_bikel1_speed.bin; st-flash write bin/crypto_kem_bikel1_speed.bin 0x8000000' .  
   Then collect benchmark results from the UART port of your M4 board with tools from PQM4 .
 
 
