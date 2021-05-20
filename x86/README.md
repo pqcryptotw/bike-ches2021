@@ -22,10 +22,15 @@ Additional files excluded from the original implementation are in public domain.
 1. Download and setup the SUPERCOP (https://bench.cr.yp.to/supercop.html).
 2. Copy the crypto_kem/ to SUPERCOP:  
   'cp -r crypto_kem  **SUPERCOP_DIR**/crypto_kem'  
-3. Benchmarking on SUPERCOP  
+3. Benchmarking on SUPERCOP.  
+   Please note that it would take about **10 hours** to initialize(i.e., the 'do-part used') SUPERCOP.  
   'do-part used'  
   'do-part crypto_kem bikel1'  
   'do-part crypto_kem bikel3'  
-4. The results are stored in benchmark/*/data .
-
+4. The results are stored in benchmark/*/data .  
+  The line with 'keypair_cycles', 'enc_cycles', and 'dec_cycles' reports the cycles counts for 3x32 measurements
+ of key generation, encapsulation, and decapsulation respectively. The first number is the median of the measurements.  
+  'grep "keypair_cycles" ./data'  
+  'grep "enc_cycles" ./data'  
+  'grep "dec_cycles" ./data'  
 

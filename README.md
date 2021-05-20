@@ -39,10 +39,20 @@ There are 2 directories:
 2. Copy the crypto_kem/ to SUPERCOP:  
   'cp -r crypto_kem  **SUPERCOP_DIR**/crypto_kem'  
 3. Benchmarking on SUPERCOP  
+   Please note that it would take about **10 hours** to initialize(i.e., the 'do-part used') SUPERCOP.  
+   For faster benchmarking, one can edit okcompilers/c or cpp to remove some comiler options as https://bench.cr.yp.to/tips.html  
   'do-part used'  
   'do-part crypto_kem bikel1'  
   'do-part crypto_kem bikel3'  
-4. The results are stored in benchmark/*/data .
+4. The results are stored in benchmark/*/data .  
+  In the file, the line with 'keypair_cycles', 'enc_cycles', and 'dec_cycles' reports the cycles counts for 3x32 measurements
+ of key generation, encapsulation, and decapsulation respectively. The first number is the median of the measurements.  
+  'grep "keypair_cycles" ./data'  
+  'grep "enc_cycles" ./data'  
+  'grep "dec_cycles" ./data'  
+
+  More explanations about the fields in the data file can be found here: https://bench.cr.yp.to/supercop.html  
+
 
 
 ### **m4**
