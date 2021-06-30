@@ -15,7 +15,7 @@ The implementations are modified from the BIKE team's original implementations(h
 
 The original implementation is licensed under the Apache-2.0 License.  
 The modified files are under the same Apache-2.0 licence.  
-Additional files excluded from the original implementation are in public domain.
+Additional files excluded from the original implementation are in the public domain.
 
 
 ## Instructions for benchmarking on SUPERCOP
